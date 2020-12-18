@@ -9,9 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-use App\Repositories\Enums\PermissionEnum;
 use App\Repositories\Enums\ResponseCodeEnum;
-use App\Repositories\Enums\RoleEnum;
 
 return [
     // 响应状态码

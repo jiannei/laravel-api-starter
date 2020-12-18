@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
 
         'api' => [
             'throttle:api',
+            \Jiannei\Logger\Laravel\Http\Middleware\RequestLog::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];

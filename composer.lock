@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57c5f62500762e0951eda38d4e9b92a6",
+    "content-hash": "e556ce87ba0116c40d5f056d7f4fad45",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -129,6 +129,85 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "support": {
+                "issues": "https://github.com/composer/package-versions-deprecated/issues",
+                "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.1"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-11T10:22:58+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -971,17 +1050,166 @@
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
-            "name": "jiannei/laravel-enum",
-            "version": "1.0.0",
+            "name": "jean85/pretty-package-versions",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Jiannei/laravel-enum.git",
-                "reference": "a4a6ee3a34263709095ed521787b9ffba0e2ba98"
+                "url": "https://github.com/Jean85/pretty-package-versions.git",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/a4a6ee3a34263709095ed521787b9ffba0e2ba98",
-                "reference": "a4a6ee3a34263709095ed521787b9ffba0e2ba98",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/a917488320c20057da87f67d0d40543dd9427f7a",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "composer/package-versions-deprecated": "^1.8.0",
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0|^8.5|^9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jean85\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Lai",
+                    "email": "alessandro.lai85@gmail.com"
+                }
+            ],
+            "description": "A wrapper for ocramius/package-versions to get pretty versions strings",
+            "keywords": [
+                "composer",
+                "package",
+                "release",
+                "versions"
+            ],
+            "support": {
+                "issues": "https://github.com/Jean85/pretty-package-versions/issues",
+                "source": "https://github.com/Jean85/pretty-package-versions/tree/1.5.1"
+            },
+            "time": "2020-09-14T08:43:34+00:00"
+        },
+        {
+            "name": "jenssegers/mongodb",
+            "version": "v3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/laravel-mongodb.git",
+                "reference": "a9c74106c27abeb7d57400bd79babe8688123232"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/a9c74106c27abeb7d57400bd79babe8688123232",
+                "reference": "a9c74106c27abeb7d57400bd79babe8688123232",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/container": "^8.0",
+                "illuminate/database": "^8.0",
+                "illuminate/events": "^8.0",
+                "illuminate/support": "^8.0",
+                "mongodb/mongodb": "^1.6"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "suggest": {
+                "jenssegers/mongodb-sentry": "Add Sentry support to Laravel-MongoDB",
+                "jenssegers/mongodb-session": "Add MongoDB session support to Laravel-MongoDB"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Mongodb\\MongodbServiceProvider",
+                        "Jenssegers\\Mongodb\\MongodbQueueServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Jenssegers\\Mongodb": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A MongoDB based Eloquent model and Query builder for Laravel (Moloquent)",
+            "homepage": "https://github.com/jenssegers/laravel-mongodb",
+            "keywords": [
+                "database",
+                "eloquent",
+                "laravel",
+                "model",
+                "moloquent",
+                "mongo",
+                "mongodb"
+            ],
+            "support": {
+                "issues": "https://github.com/jenssegers/laravel-mongodb/issues",
+                "source": "https://github.com/jenssegers/laravel-mongodb/tree/v3.8.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/mongodb",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-22T07:49:38+00:00"
+        },
+        {
+            "name": "jiannei/laravel-enum",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jiannei/laravel-enum.git",
+                "reference": "b8c910ac9f2e735d1e99b58cdddf603039955123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/b8c910ac9f2e735d1e99b58cdddf603039955123",
+                "reference": "b8c910ac9f2e735d1e99b58cdddf603039955123",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1001,7 +1229,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Jiannei\\Enum\\Laravel\\Providers\\ServiceProvider"
+                        "Jiannei\\Enum\\Laravel\\Providers\\LaravelServiceProvider"
                     ]
                 }
             },
@@ -1023,9 +1251,70 @@
             "description": "Laravel Enum support",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-enum/issues",
-                "source": "https://github.com/Jiannei/laravel-enum/tree/1.0.0"
+                "source": "https://github.com/Jiannei/laravel-enum/tree/1.1.0"
             },
-            "time": "2020-11-30T01:08:15+00:00"
+            "time": "2020-12-17T11:02:20+00:00"
+        },
+        {
+            "name": "jiannei/laravel-logger",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jiannei/laravel-logger.git",
+                "reference": "ac8e8d7e4e1b8c76c8117bb69cf0672773e60971"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jiannei/laravel-logger/zipball/ac8e8d7e4e1b8c76c8117bb69cf0672773e60971",
+                "reference": "ac8e8d7e4e1b8c76c8117bb69cf0672773e60971",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "jiannei/laravel-enum": "^1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.4",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jiannei\\Logger\\Laravel\\Providers\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Jiannei\\Logger\\Laravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jiannei",
+                    "email": "longjian.huang@foxmail.com"
+                }
+            ],
+            "description": "Laravel logger.",
+            "support": {
+                "issues": "https://github.com/Jiannei/laravel-logger/issues",
+                "source": "https://github.com/Jiannei/laravel-logger/tree/1.0.2"
+            },
+            "time": "2020-12-18T03:35:10+00:00"
         },
         {
             "name": "jiannei/laravel-response",
@@ -1605,6 +1894,80 @@
                 }
             ],
             "time": "2020-10-18T11:50:25+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "953dbc19443aa9314c44b7217a16873347e6840d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/953dbc19443aa9314c44b7217a16873347e6840d",
+                "reference": "953dbc19443aa9314c44b7217a16873347e6840d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.8.1",
+                "jean85/pretty-package-versions": "^1.2",
+                "php": "^7.0 || ^8.0",
+                "symfony/polyfill-php80": "^1.19"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5, <3.5.5",
+                "symfony/phpunit-bridge": "5.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Braun",
+                    "email": "andreas.braun@mongodb.com"
+                },
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "support": {
+                "issues": "https://github.com/mongodb/mongo-php-library/issues",
+                "source": "https://github.com/mongodb/mongo-php-library/tree/1.8.0"
+            },
+            "time": "2020-11-25T12:26:02+00:00"
         },
         {
             "name": "monolog/monolog",
