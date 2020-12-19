@@ -36,7 +36,7 @@ class UsersController extends Controller
     {
         $user = User::first();
 
-        return Response::success(new UserResource($user));
+        return Response::created(new UserResource($user));
     }
 
     public function array()
@@ -45,6 +45,11 @@ class UsersController extends Controller
             'name' => 'Jiannel',
             'email' => 'longjian.huang@foxmail.com'
         ],'', ResponseCodeEnum::SERVICE_REGISTER_SUCCESS);
+    }
+
+    public function fail()
+    {
+        Response::fail();
     }
 
     public function exception()
