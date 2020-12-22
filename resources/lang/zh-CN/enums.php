@@ -9,6 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
+use App\Repositories\Enums\LogEnum;
 use App\Repositories\Enums\ResponseCodeEnum;
 
 return [
@@ -24,6 +25,10 @@ return [
         ResponseCodeEnum::SERVICE_REGISTER_SUCCESS => '注册成功',
         ResponseCodeEnum::SERVICE_LOGIN_SUCCESS => '登录成功',
 
+        // 业务操作失败：授权业务
+        ResponseCodeEnum::SERVICE_REGISTER_ERROR => '注册失败',
+        ResponseCodeEnum::SERVICE_LOGIN_ERROR => '登录失败',
+
         // 客户端错误
         ResponseCodeEnum::CLIENT_PARAMETER_ERROR => '参数错误',
         ResponseCodeEnum::CLIENT_CREATED_ERROR => '数据已存在',
@@ -36,9 +41,11 @@ return [
         ResponseCodeEnum::SYSTEM_CACHE_CONFIG_ERROR => '缓存配置错误',
         ResponseCodeEnum::SYSTEM_CACHE_MISSED_ERROR => '缓存未命中',
         ResponseCodeEnum::SYSTEM_CONFIG_ERROR => '系统配置错误',
+    ],
 
-        // 业务操作失败：授权业务
-        ResponseCodeEnum::SERVICE_REGISTER_ERROR => '注册失败',
-        ResponseCodeEnum::SERVICE_LOGIN_ERROR => '登录失败',
+    // 日志描述
+    LogEnum::class => [
+        LogEnum::SYSTEM_SQL => '[系统]SQL',
+        LogEnum::SYSTEM_REQUEST => '[系统]请求',
     ],
 ];

@@ -116,6 +116,8 @@ return [
         ],
     ],
 
+    'enum' => App\Repositories\Enums\LogEnum::class,
+
     'query' => [
         'enabled' => env('LOG_QUERY', false),
 
