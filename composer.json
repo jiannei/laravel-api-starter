@@ -13,7 +13,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "jenssegers/mongodb": "^3.8",
-        "jiannei/laravel-enum": "^1.2",
+        "jiannei/laravel-enum": "^1.3",
         "jiannei/laravel-logger": "^1.1",
         "jiannei/laravel-response": "^1.3",
         "laravel/framework": "^8.12",

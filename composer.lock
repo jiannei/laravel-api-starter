@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c589e12fa207be1da5c8fb03bade1bfc",
+    "content-hash": "eb63619e8cf542c7c376729ed8bfc5ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1200,16 +1200,16 @@
         },
         {
             "name": "jiannei/laravel-enum",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-enum.git",
-                "reference": "f51e620a3768dd438421f376f00d0031eb5cc1e0"
+                "reference": "a89b0a5032913f666cb9a09558f2e3be703b1ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/f51e620a3768dd438421f376f00d0031eb5cc1e0",
-                "reference": "f51e620a3768dd438421f376f00d0031eb5cc1e0",
+                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/a89b0a5032913f666cb9a09558f2e3be703b1ced",
+                "reference": "a89b0a5032913f666cb9a09558f2e3be703b1ced",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1251,9 +1251,9 @@
             "description": "Laravel Enum support",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-enum/issues",
-                "source": "https://github.com/Jiannei/laravel-enum/tree/1.2.0"
+                "source": "https://github.com/Jiannei/laravel-enum/tree/1.3.0"
             },
-            "time": "2020-12-21T13:35:41+00:00"
+            "time": "2020-12-26T11:56:07+00:00"
         },
         {
             "name": "jiannei/laravel-logger",
@@ -1318,16 +1318,16 @@
         },
         {
             "name": "jiannei/laravel-response",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-response.git",
-                "reference": "8c32975657356998b4be50906962dc1100950312"
+                "reference": "3408053de09c3fa120b424ce7f4cf1d0593f79e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/8c32975657356998b4be50906962dc1100950312",
-                "reference": "8c32975657356998b4be50906962dc1100950312",
+                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/3408053de09c3fa120b424ce7f4cf1d0593f79e8",
+                "reference": "3408053de09c3fa120b424ce7f4cf1d0593f79e8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1374,22 +1374,22 @@
             "description": "Laravel api response data format.",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-response/issues",
-                "source": "https://github.com/Jiannei/laravel-response/tree/1.3.0"
+                "source": "https://github.com/Jiannei/laravel-response/tree/1.3.1"
             },
-            "time": "2020-12-21T15:55:38+00:00"
+            "time": "2020-12-26T12:25:20+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v8.19.0",
+            "version": "v8.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb"
+                "reference": "b5d8573ab16027867eaa1ac148893833434f9b02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb",
-                "reference": "f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b5d8573ab16027867eaa1ac148893833434f9b02",
+                "reference": "b5d8573ab16027867eaa1ac148893833434f9b02",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1549,7 +1549,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-15T16:16:31+00:00"
+            "time": "2020-12-22T21:21:19+00:00"
         },
         {
             "name": "laravel/tinker",
