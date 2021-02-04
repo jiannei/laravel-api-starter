@@ -15,4 +15,10 @@ return [
     'enum' => ResponseCodeEnum::class,
 
     'validation_error_code' => ResponseCodeEnum::HTTP_UNPROCESSABLE_ENTITY,
+
+    'format' => [
+        'paginated_resource' => [
+            'data_field' => 'list',
+        ],
+    ],
 ];
