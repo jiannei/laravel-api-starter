@@ -11,6 +11,7 @@
 
 use App\Repositories\Enums\LogEnum;
 use App\Repositories\Enums\ResponseCodeEnum;
+use App\Repositories\Enums\ScheduleEnum;
 
 return [
     // 响应状态码
@@ -47,5 +48,10 @@ return [
     LogEnum::class => [
         LogEnum::SYSTEM_SQL => '[系统]SQL',
         LogEnum::SYSTEM_REQUEST => '[系统]请求',
+    ],
+
+    // command
+    ScheduleEnum::class => [
+        ScheduleEnum::GITHUB_TRENDING => '同步 Github Trending',
     ],
 ];
