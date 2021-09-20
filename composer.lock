@@ -1061,13 +1061,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Jiannei/helpers/zipball/1fa669201e3c4f9b384ffdb5ab3ea4caabc594f3",
                 "reference": "1fa669201e3c4f9b384ffdb5ab3ea4caabc594f3",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "type": "library",
             "autoload": {
@@ -1094,31 +1088,27 @@
         },
         {
             "name": "jiannei/laravel-enum",
-            "version": "1.3.2",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-enum.git",
-                "reference": "3b141ddf9e8fd8560af5f398383402775e66e198"
+                "reference": "f051880910001d7e2c971b8ecd330f7fb02afd46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/3b141ddf9e8fd8560af5f398383402775e66e198",
-                "reference": "3b141ddf9e8fd8560af5f398383402775e66e198",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/f051880910001d7e2c971b8ecd330f7fb02afd46",
+                "reference": "f051880910001d7e2c971b8ecd330f7fb02afd46",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "jiannei/helpers": "^0.2.1"
+                "jiannei/helpers": "^0.2.1",
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.4",
-                "phpunit/phpunit": "^9.4"
+                "orchestra/database": "^3.5",
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -1143,12 +1133,12 @@
                     "email": "longjian.huang@foxmail.com"
                 }
             ],
-            "description": "Laravel Enum support",
+            "description": "A simple and easy-to-use enumeration extension package to help you manage enumerations in your project more conveniently, supporting Laravel and Lumen",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-enum/issues",
-                "source": "https://github.com/Jiannei/laravel-enum/tree/1.3.2"
+                "source": "https://github.com/Jiannei/laravel-enum/tree/v1.4.1"
             },
-            "time": "2021-06-16T03:08:57+00:00"
+            "time": "2021-09-19T13:26:30+00:00"
         },
         {
             "name": "jiannei/laravel-logger",
