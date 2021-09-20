@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47db73bee963562468c7fa07de8d49b8",
+    "content-hash": "c8aa09c1a1c523cb1af397561225304b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1214,30 +1214,28 @@
         },
         {
             "name": "jiannei/laravel-response",
-            "version": "1.7.0",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-response.git",
-                "reference": "2b7974c28439b05055f853592f21b2ceb52c296d"
+                "reference": "7c102b8eba5d2e2ea54460bc407d0a5825f3ef0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/2b7974c28439b05055f853592f21b2ceb52c296d",
-                "reference": "2b7974c28439b05055f853592f21b2ceb52c296d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/7c102b8eba5d2e2ea54460bc407d0a5825f3ef0d",
+                "reference": "7c102b8eba5d2e2ea54460bc407d0a5825f3ef0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
             },
             "require-dev": {
-                "jiannei/laravel-enum": "^1.2",
-                "laravel/legacy-factories": "^1.0.4",
+                "jiannei/laravel-enum": "^3.0",
+                "laravel/legacy-factories": "^1.1",
                 "league/fractal": "^0.19.2",
-                "orchestra/testbench": "^6.4",
-                "phpunit/phpunit": "^9.4"
+                "orchestra/database": "^6.0",
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3.3"
             },
             "type": "library",
             "extra": {
@@ -1268,9 +1266,9 @@
             "description": "Laravel api response data format.",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-response/issues",
-                "source": "https://github.com/Jiannei/laravel-response/tree/1.7.0"
+                "source": "https://github.com/Jiannei/laravel-response/tree/v4.0.0"
             },
-            "time": "2021-08-16T02:06:08+00:00"
+            "time": "2021-09-19T16:14:19+00:00"
         },
         {
             "name": "jiannei/laravel-schedule",
