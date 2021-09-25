@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "jiannei/laravel-api-starter",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel Api Starter template.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "Api Starter template"
     ],
     "license": "MIT",
     "require": {
