@@ -1277,16 +1277,16 @@
         },
         {
             "name": "jiannei/laravel-response",
-            "version": "v4.0.2",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-response.git",
-                "reference": "ba90958a6bdcfbd98807bb1d98b7d4a2752fa3df"
+                "reference": "a02f269b506c0466cc290a4a7e160542cadc2bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/ba90958a6bdcfbd98807bb1d98b7d4a2752fa3df",
-                "reference": "ba90958a6bdcfbd98807bb1d98b7d4a2752fa3df",
+                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/a02f269b506c0466cc290a4a7e160542cadc2bb0",
+                "reference": "a02f269b506c0466cc290a4a7e160542cadc2bb0",
                 "shasum": ""
             },
             "require": {
@@ -1329,9 +1329,9 @@
             "description": "Laravel api response data format.",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-response/issues",
-                "source": "https://github.com/Jiannei/laravel-response/tree/v4.0.2"
+                "source": "https://github.com/Jiannei/laravel-response/tree/v4.0.4"
             },
-            "time": "2021-09-27T09:45:27+00:00"
+            "time": "2021-10-30T02:15:07+00:00"
         },
         {
             "name": "jiannei/laravel-schedule",
