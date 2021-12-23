@@ -21,6 +21,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Deprecations Log Channel
+    |--------------------------------------------------------------------------
+    |
+    | This option controls the log channel that should be used to log warnings
+    | regarding deprecated PHP and library features. This allows you to get
+    | your application ready for upcoming major versions of dependencies.
+    |
+    */
+
+    'deprecations' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Log Channels
     |--------------------------------------------------------------------------
     |
@@ -74,6 +87,7 @@ return [
 
         'stderr' => [
             'driver' => 'monolog',
+            'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
@@ -99,34 +113,6 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
-
-        'mongo' => [
-            'driver' => 'custom', // 此处必须为 custom
-            'via' => \Jiannei\Logger\Laravel\MongoLogger::class, // 当 driver 设置为 custom 时，使用 via 配置项所指向的工厂类创建 logger
-
-            'channel' => env('LOG_MONGODB_CHANNEL', 'mongo'),
-            'level' => env('LOG_MONGODB_LEVEL', 'debug'), // 日志级别
-            'separate' => env('LOG_MONGODB_SEPARATE', false), // false,daily,monthly,yearly
-
-            'host' => env('LOG_MONGODB_HOST', config('database.connections.mongodb.host')),
-            'port' => env('LOG_MONGODB_PORT', config('database.connections.mongodb.port')),
-            'username' => env('LOG_MONGODB_USERNAME', config('database.connections.mongodb.username')),
-            'password' => env('LOG_MONGODB_PASSWORD', config('database.connections.mongodb.password')),
-            'database' => env('LOG_MONGODB_DATABASE', config('database.connections.mongodb.database')),
-        ],
     ],
 
-    'enum' => App\Repositories\Enums\LogEnum::class,
-
-    'query' => [
-        'enabled' => env('LOG_QUERY', false),
-
-        // Only record queries that are slower than the following time
-        // Unit: milliseconds
-        'slower_than' => 0,
-    ],
-
-    'request' => [
-        'enabled' => env('LOG_REQUEST', false),
-    ],
 ];

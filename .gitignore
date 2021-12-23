@@ -11,7 +11,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.idea
+/.idea
+/.vscode
 deploy.php
 hosts.yml
 .env.prod
