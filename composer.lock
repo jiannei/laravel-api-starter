@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12524947d8c752f84bc21aaaede06bfa",
+    "content-hash": "73e32434ea39c6d37045e5a7f408c3cb",
     "packages": [
         {
             "name": "brick/math",
@@ -958,6 +958,171 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "jiannei/helpers",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jiannei/helpers.git",
+                "reference": "1fa669201e3c4f9b384ffdb5ab3ea4caabc594f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jiannei/helpers/zipball/1fa669201e3c4f9b384ffdb5ab3ea4caabc594f3",
+                "reference": "1fa669201e3c4f9b384ffdb5ab3ea4caabc594f3",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jiannei",
+                    "email": "longjian.huang@foxmail.com"
+                }
+            ],
+            "description": "Some helper functions.",
+            "support": {
+                "issues": "https://github.com/Jiannei/helpers/issues",
+                "source": "https://github.com/Jiannei/helpers/tree/v0.2.1"
+            },
+            "time": "2021-06-16T03:01:10+00:00"
+        },
+        {
+            "name": "jiannei/laravel-enum",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jiannei/laravel-enum.git",
+                "reference": "a3686fda3cf6c51942d13a50bdcd5f41622907b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jiannei/laravel-enum/zipball/a3686fda3cf6c51942d13a50bdcd5f41622907b2",
+                "reference": "a3686fda3cf6c51942d13a50bdcd5f41622907b2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "jiannei/helpers": "^0.2.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jiannei\\Enum\\Laravel\\Providers\\LaravelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jiannei\\Enum\\Laravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jiannei",
+                    "email": "longjian.huang@foxmail.com"
+                }
+            ],
+            "description": "A simple and easy-to-use enumeration extension package to help you manage enumerations in your project more conveniently, supporting Laravel and Lumen",
+            "support": {
+                "issues": "https://github.com/Jiannei/laravel-enum/issues",
+                "source": "https://github.com/Jiannei/laravel-enum/tree/v3.0.0"
+            },
+            "time": "2021-09-19T14:27:22+00:00"
+        },
+        {
+            "name": "jiannei/laravel-response",
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jiannei/laravel-response.git",
+                "reference": "5193800903dd677a02bb43b586bbdf2f6f342eea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jiannei/laravel-response/zipball/5193800903dd677a02bb43b586bbdf2f6f342eea",
+                "reference": "5193800903dd677a02bb43b586bbdf2f6f342eea",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "require-dev": {
+                "jiannei/laravel-enum": "^3.0",
+                "laravel/legacy-factories": "^1.1",
+                "league/fractal": "^0.19.2",
+                "orchestra/database": "^6.0",
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jiannei\\Response\\Laravel\\Providers\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Response": "Jiannei\\Response\\Laravel\\Support\\Facades\\Response"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jiannei\\Response\\Laravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jiannei",
+                    "email": "longjian.huang@foxmail.com"
+                }
+            ],
+            "description": "Laravel api response data format.",
+            "support": {
+                "issues": "https://github.com/Jiannei/laravel-response/issues",
+                "source": "https://github.com/Jiannei/laravel-response/tree/v4.1.0"
+            },
+            "time": "2021-12-24T08:17:43+00:00"
         },
         {
             "name": "laravel/framework",
