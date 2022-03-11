@@ -7669,13 +7669,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/backtrace/zipball/4ee7d41aa5268107906ea8a4d9ceccde136dbd5b",
                 "reference": "4ee7d41aa5268107906ea8a4d9ceccde136dbd5b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.3|^8.0"
@@ -7737,13 +7731,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/8ada1e5f4d7a2869f491c5e75d1f689b69db423e",
                 "reference": "8ada1e5f4d7a2869f491c5e75d1f689b69db423e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/pipeline": "^8.0|^9.0",
@@ -7797,23 +7785,17 @@
         },
         {
             "name": "spatie/ignition",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "090518ff676e17a038dfe77490018363ff66af20"
+                "reference": "ab8d1f938d3ffd20af25ad788a9d019e1123068c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/090518ff676e17a038dfe77490018363ff66af20",
-                "reference": "090518ff676e17a038dfe77490018363ff66af20",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/ab8d1f938d3ffd20af25ad788a9d019e1123068c",
+                "reference": "ab8d1f938d3ffd20af25ad788a9d019e1123068c",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -7870,27 +7852,21 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-04T12:52:17+00:00"
+            "time": "2022-03-08T15:12:58+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ignition.git",
-                "reference": "d349854331789aba9205fd755e0c1d1934ef1463"
+                "reference": "ea3a5401b631e8a2ce10581c1fec10c240b8e36e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/d349854331789aba9205fd755e0c1d1934ef1463",
-                "reference": "d349854331789aba9205fd755e0c1d1934ef1463",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/ea3a5401b631e8a2ce10581c1fec10c240b8e36e",
+                "reference": "ea3a5401b631e8a2ce10581c1fec10c240b8e36e",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -7963,7 +7939,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-15T11:02:15+00:00"
+            "time": "2022-03-10T12:29:54+00:00"
         },
         {
             "name": "theseer/tokenizer",
