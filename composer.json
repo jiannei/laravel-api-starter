@@ -12,7 +12,7 @@
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "jiannei/laravel-enum": "^3.0",
-        "jiannei/laravel-response": "^4.0",
+        "jiannei/laravel-response": "^4.2",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7"
