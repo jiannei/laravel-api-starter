@@ -7,7 +7,6 @@ use App\Http\Resources\UserResource;
 use App\Enums\ResponseCodeEnum;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Jiannei\Response\Laravel\Support\Facades\Response;
 
 class UsersController extends Controller
 {
@@ -15,41 +14,41 @@ class UsersController extends Controller
     {
         $users = User::all();
 
-        return Response::success(new UserCollection($users));
+        return $this->success(new UserCollection($users));
     }
 
     public function paginate()
     {
         $users = User::paginate(5);
 
-        return Response::success(new UserCollection($users));
+        return $this->success(new UserCollection($users));
     }
 
     public function simplePaginate()
     {
         $users = User::simplePaginate(5);
 
-        return Response::success(new UserCollection($users));
+        return $this->success(new UserCollection($users));
     }
 
     public function item()
     {
         $user = User::first();
 
-        return Response::created(new UserResource($user));
+        return $this->created(new UserResource($user));
     }
 
     public function array()
     {
-        return Response::success([
+        return $this->success([
             'name' => 'Jiannel',
             'email' => 'longjian.huang@foxmail.com'
         ],'', ResponseCodeEnum::SERVICE_REGISTER_SUCCESS);
     }
 
-    public function fail()
+    public function failure()
     {
-        Response::fail();
+        $this->fail();
     }
 
     public function exception()

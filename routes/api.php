@@ -24,6 +24,6 @@ Route::get('users/paginate', [UsersController::class, 'paginate']);
 Route::get('users/simple-paginate', [UsersController::class, 'simplePaginate']);
 Route::get('users/item', [UsersController::class, 'item']);
 Route::get('users/array', [UsersController::class, 'array']);
-Route::get('fail', [UsersController::class, 'fail']);
+Route::get('failure', [UsersController::class, 'failure']);
 Route::get('exception', [UsersController::class, 'exception']);
 Route::get('validation', [UsersController::class, 'validationException']);
