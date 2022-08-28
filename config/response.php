@@ -32,7 +32,7 @@ return [
     // https://github.com/Jiannei/laravel-enum
     // https://github.com/BenSampo/laravel-enum
 
-    'enum' => '', // \Jiannei\Enum\Laravel\Repositories\Enums\HttpStatusCodeEnum::class
+    'enum' => \App\Enums\ResponseCodeEnum::class, // \Jiannei\Enum\Laravel\Repositories\Enums\HttpStatusCodeEnum::class
 
     //  You can set some attributes (eg:code/message/header/options) for the exception, and it will override the default attributes of the exception
     'exception' => [
