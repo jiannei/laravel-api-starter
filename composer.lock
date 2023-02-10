@@ -1071,16 +1071,16 @@
         },
         {
             "name": "jiannei/laravel-response",
-            "version": "v5.1.2",
+            "version": "v5.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jiannei/laravel-response.git",
-                "reference": "24f6b7b4795d0f1ca7b05478375f25bf857c3ad4"
+                "reference": "657fbfd2ff83cd344713bab80ba115c9c67eb45c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jiannei/laravel-response/zipball/24f6b7b4795d0f1ca7b05478375f25bf857c3ad4",
-                "reference": "24f6b7b4795d0f1ca7b05478375f25bf857c3ad4",
+                "url": "https://api.github.com/repos/jiannei/laravel-response/zipball/657fbfd2ff83cd344713bab80ba115c9c67eb45c",
+                "reference": "657fbfd2ff83cd344713bab80ba115c9c67eb45c",
                 "shasum": ""
             },
             "require": {
@@ -1122,9 +1122,9 @@
             "description": "Laravel api response data format.",
             "support": {
                 "issues": "https://github.com/jiannei/laravel-response/issues",
-                "source": "https://github.com/jiannei/laravel-response/tree/v5.1.2"
+                "source": "https://github.com/jiannei/laravel-response/tree/v5.1.3"
             },
-            "time": "2023-02-06T02:08:42+00:00"
+            "time": "2023-02-10T08:18:03+00:00"
         },
         {
             "name": "laravel/framework",
