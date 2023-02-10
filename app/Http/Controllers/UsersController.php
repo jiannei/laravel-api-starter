@@ -53,7 +53,7 @@ class UsersController extends Controller
 
     public function exception()
     {
-        abort(ResponseCodeEnum::SERVICE_LOGIN_ERROR);
+        abort(500102,'异常信息');
     }
 
     public function validationException(Request $request)
