@@ -129,7 +129,6 @@ Model 层只需要相对简单地数据定义就可以了。比如，对数据�
 
 - [jiannei/laravel-response](https://github.com/jiannei/laravel-response)：规范统一的响应数据格式
 - [jiannei/laravel-response](https://github.com/jiannei/laravel-enum)：多语言的枚举支持
-- [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth)：默认支持 JWT 授权
 
 ## 参考
 
