@@ -47,7 +47,6 @@
 │   │   └── Handler.php
 │   ├── Http
 │   │   ├── Controllers               // Controller 层根据 Request 将任务分发给不同 Service 处理，返回响应给客户端
-│   │   │   ├── AuthController.php    // 包含 jwt 授权示例
 │   │   │   ├── Controller.php
 │   │   │   └── UsersController.php   // 包含 laravel-response 使用示例
 │   │   ├── Middleware
