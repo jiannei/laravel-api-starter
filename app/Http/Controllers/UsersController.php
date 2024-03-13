@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
-use App\Enums\ResponseCodeEnum;
+use App\Enums\ResponseEnum;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -48,24 +48,24 @@ class UsersController extends Controller
     {
         return $this->success([
             'name' => 'Jiannel',
-            'email' => 'longjian.huang@foxmail.com'
-        ]);
+            'email' => 'longjian.huang@foxmail.com',
+        ], '', ResponseEnum::SERVICE_REGISTER_SUCCESS);
     }
 
     public function failure()
     {
-       return $this->fail();
+        return $this->fail();
     }
 
     public function exception()
     {
-        abort(500102,'异常信息');
+        abort(500102, '异常信息');
     }
 
     public function validationException(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required|email'
+            'email' => 'required|email',
         ]);
     }
 }
