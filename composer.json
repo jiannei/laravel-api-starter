@@ -10,7 +10,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "jiannei/laravel-enum": "dev-main",
+        "jiannei/laravel-response": "dev-main",
         "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {

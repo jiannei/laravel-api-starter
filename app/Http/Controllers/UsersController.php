@@ -31,6 +31,13 @@ class UsersController extends Controller
         return $this->success(new UserCollection($users));
     }
 
+    public function cursorPaginate()
+    {
+        $users = User::cursorPaginate(5);
+
+        return $this->success(new UserCollection($users));
+    }
+
     public function item()
     {
         $user = User::first();
@@ -43,12 +50,12 @@ class UsersController extends Controller
         return $this->success([
             'name' => 'Jiannel',
             'email' => 'longjian.huang@foxmail.com'
-        ],'', ResponseCodeEnum::SERVICE_REGISTER_SUCCESS);
+        ]);
     }
 
     public function failure()
     {
-        $this->fail();
+       return $this->fail();
     }
 
     public function exception()
