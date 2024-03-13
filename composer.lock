@@ -1141,12 +1141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jiannei/laravel-response.git",
-                "reference": "da869ea815d5afc002c9f539a9f58259f108b847"
+                "reference": "f43d75feeed958608ec9f5dfd2e11a3041f9c6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jiannei/laravel-response/zipball/da869ea815d5afc002c9f539a9f58259f108b847",
-                "reference": "da869ea815d5afc002c9f539a9f58259f108b847",
+                "url": "https://api.github.com/repos/jiannei/laravel-response/zipball/f43d75feeed958608ec9f5dfd2e11a3041f9c6bc",
+                "reference": "f43d75feeed958608ec9f5dfd2e11a3041f9c6bc",
                 "shasum": ""
             },
             "require": {
@@ -1191,7 +1191,7 @@
                 "issues": "https://github.com/jiannei/laravel-response/issues",
                 "source": "https://github.com/jiannei/laravel-response/tree/main"
             },
-            "time": "2024-01-11T06:21:44+00:00"
+            "time": "2024-03-13T06:27:24+00:00"
         },
         {
             "name": "laravel/framework",

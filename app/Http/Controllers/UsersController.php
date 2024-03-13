@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\UserCollection;
 use App\Http\Resources\UserResource;
 use App\Enums\ResponseCodeEnum;
 use App\Models\User;
@@ -14,35 +13,35 @@ class UsersController extends Controller
     {
         $users = User::all();
 
-        return $this->success(new UserCollection($users));
+        return $this->success(UserResource::collection($users));
     }
 
     public function paginate()
     {
         $users = User::paginate(5);
 
-        return $this->success(new UserCollection($users));
+        return $this->success(UserResource::collection($users));
     }
 
     public function simplePaginate()
     {
         $users = User::simplePaginate(5);
 
-        return $this->success(new UserCollection($users));
+        return $this->success(UserResource::collection($users));
     }
 
     public function cursorPaginate()
     {
         $users = User::cursorPaginate(5);
 
-        return $this->success(new UserCollection($users));
+        return $this->success(UserResource::collection($users));
     }
 
     public function item()
     {
         $user = User::first();
 
-        return $this->created(new UserResource($user));
+        return $this->created(UserResource::make($user));
     }
 
     public function array()
