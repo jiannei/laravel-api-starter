@@ -6,9 +6,6 @@
 
 开箱即用，加速 Api 开发。
 
-![StyleCI build status](https://github.styleci.io/repos/267924989/shield)
-![Test](https://github.com/Jiannei/lumen-api-starter/workflows/Test/badge.svg?branch=main)
-
 ### 社区讨论传送
 
 - [是时候使用 Lumen 8 + API Resource 开发项目了！](https://learnku.com/articles/45311)
@@ -39,7 +36,7 @@
 │   │   └── Kernel.php                // Schedule 调度
 │   ├── Contracts                     // 定义 interface
 │   ├── Enums                         // 定义枚举：要求php8.1以上版本，且laravel9.x以上版本 https://laravel.com/docs/9.x/releases#enum-casting
-│   │   └── ResponseCode.php
+│   │   └── ResponseEnum.php
 │   ├── Events                        // 事件处理
 │   │   ├── Event.php
 │   │   └── ExampleEvent.php
@@ -61,9 +58,7 @@
 │   ├── Models                        // Laravel 原始的 Eloquent\Model：定义数据表特性、数据表之间的关联关系等；不处理业务
 │   │   └── User.php
 │   ├── Providers                     // 各种服务容器
-│   │   ├── AppServiceProvider.php
-│   │   ├── AuthServiceProvider.php
-│   │   └── EventServiceProvider.php
+│   │   └── AppServiceProvider.php
 │   ├── Services                      // Service 层：处理实际业务；调用 Model 取资源数据，分发 Job、Eevent 等
 │   │   └── UserService.php
 │   └── Support                       // 对框架的扩展，或者实际项目中需要封装一些与业务无关的通用功能集
@@ -127,7 +122,7 @@ Model 层只需要相对简单地数据定义就可以了。比如，对数据�
 ## Packages 
 
 - [jiannei/laravel-response](https://github.com/jiannei/laravel-response)：规范统一的响应数据格式
-- [jiannei/laravel-response](https://github.com/jiannei/laravel-enum)：多语言的枚举支持
+- [jiannei/laravel-enum](https://github.com/jiannei/laravel-enum)：多语言的枚举支持
 
 ## 参考
 
