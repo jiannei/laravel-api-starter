@@ -1,5 +1,6 @@
 {
-    "name": "jiannei/laravel-api-starter",
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Api Starter template.",
     "keywords": [
@@ -12,18 +13,18 @@
         "php": "^8.2",
         "jiannei/laravel-enum": "^4.0.2",
         "jiannei/laravel-response": "^6.0.1",
-        "laravel/framework": "^12.0.1",
+        "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0.5",
-        "laravel/tinker": "^2.10"
+        "laravel/tinker": "^2.10.1"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.24.1",
-        "laravel/pint": "^1.18.3",
-        "laravel/sail": "^1.39.1",
-        "mockery/mockery": "^1.6.12",
-        "nunomaduro/collision": "^8.5",
-        "phpunit/phpunit": "^11.4.4",
-        "spatie/laravel-ignition": "^2.9"
+        "fakerphp/faker": "^1.23",
+        "laravel/pail": "^1.2.2",
+        "laravel/pint": "^1.13",
+        "laravel/sail": "^1.41",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "phpunit/phpunit": "^11.5.3"
     },
     "autoload": {
         "files": [
@@ -55,12 +56,13 @@
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
         ]
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "11.x-dev"
-        },
         "laravel": {
             "dont-discover": []
         }
