@@ -3,9 +3,68 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   tests:
     name: Tests
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        php-version: [8.2, 8.3, 8.4]
+        laravel-version: [12.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          tools: pecl, composer
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, json, redis, mongodb
+          coverage: xdebug
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php-${{ matrix.php-version }}-
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Copy ENV Configuration for CI
+        run: php -r "file_exists('.env') || copy('.env.ci', '.env');"
+
+      - name: Generate application key
+        run: php artisan key:generate
+
+      - name: Create DB and schemas
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+          php artisan migrate --force
+
+      - name: Execute tests via Pest
+        run: ./vendor/bin/pest
+
+      - name: Execute tests with coverage (PHP 8.3 only)
+        if: matrix.php-version == '8.3'
+        run: ./vendor/bin/pest --coverage --min=50
+
+  code-style:
+    name: Code Style
     runs-on: ubuntu-latest
 
     steps:
@@ -15,35 +74,12 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
-          tools: pecl
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite,json,redis,mongodb
-          coverage: none
-
-      - name: Validate composer.json and composer.lock
-        run: composer validate
-
-      - name: Cache Composer packages
-        id: composer-cache
-        uses: actions/cache@v4
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
+          php-version: 8.3
+          tools: composer
+          extensions: dom, curl, libxml, mbstring, zip
 
       - name: Install dependencies
-        if: steps.composer-cache.outputs.cache-hit != 'true'
-        run: composer install --prefer-dist --no-progress --no-suggest --ignore-platform-reqs
+        run: composer install --prefer-dist --no-progress --no-interaction
 
-      - name: Copy ENV Configuration for CI
-        run: php -r "file_exists('.env') || copy('.env.ci', '.env');"
-
-      - name: Create DB and schemas
-        run: |
-          mkdir -p database
-          touch database/database.sqlite
-          php artisan migrate
-
-      - name: Execute tests (Unit and Feature tests) via PHPUnit
-        run: vendor/bin/phpunit
+      - name: Check code style
+        run: composer run style:check
